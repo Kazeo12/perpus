@@ -15,7 +15,7 @@ $row = mysqli_fetch_assoc($data);
 
 <h2>Edit Peminjaman Buku</h2>
 
-<form action="../proces/update.php" method="POST">
+<form action="update.php" method="POST">
     <input type="hidden" name="id" value="<?= $row['id']; ?>">
 
     <label>Nama</label>

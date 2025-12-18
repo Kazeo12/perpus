@@ -16,4 +16,4 @@ $query = "UPDATE peminjaman SET
 
 mysqli_query($conn, $query);
 
-header("Location: ../pages/koleksi.php");
+header("Location: ../pages/admin/koleksiadmin.php");

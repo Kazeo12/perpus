@@ -10,9 +10,6 @@
 </head>
 <body>
 
-<?php
-?>
-
 <header>
     <h1>Koleksi Perpustakaan</h1>
     <nav>
@@ -20,7 +17,6 @@
             <li><a href="index.php">Beranda</a></li>
             <li><a href="aturan.php">Aturan</a></li>
             <li><a href="koleksi.php">Koleksi</a></li>
-            <li><a href="login.php">Login</a></li>
         </ul>
     </nav>
 </header>
@@ -89,7 +85,7 @@
 </section>
 
     <section>
-    <h2>Tambah Peminjaman Buku</h2>
+    <h2>Daftar Peminjaman Buku</h2>
 
 <form action="../proces/tambah.php" method="POST">
 
@@ -120,7 +116,6 @@
         <th>NIM</th>
         <th>Buku</th>
         <th>Tanggal</th>
-        <th>Aksi</th>
     </tr>
 
 <?php
@@ -134,10 +129,6 @@ while ($row = mysqli_fetch_assoc($data)) {
         <td><?= $row['nim']; ?></td>
         <td><?= $row['buku']; ?></td>
         <td><?= $row['tanggal_pinjam']; ?></td>
-        <td>
-            <a href="../proces/edit.php?id=<?= $row['id']; ?>">Edit</a> |
-            <a href="../proces/hapus.php?id=<?= $row['id']; ?>" onclick="return confirm('Yakin?')">Hapus</a>
-        </td>
     </tr>
 <?php } ?>
 </table>

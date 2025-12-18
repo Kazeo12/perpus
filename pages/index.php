@@ -18,7 +18,6 @@
             <li><a href="index.php">Beranda</a></li>
             <li><a href="aturan.php">Aturan</a></li>
             <li><a href="koleksi.php">Koleksi</a></li>
-            <li><a href="login.php">Login</a></li>
         </ul>
     </nav>
 </header>
