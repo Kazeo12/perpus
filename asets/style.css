@@ -15,7 +15,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Header styles with gradient and shadow */
 header {
   background: linear-gradient(135deg, #141a07, #00c6ff);
   color: rgb(247, 247, 1);
@@ -35,7 +34,7 @@ header h1 {
   animation: fadeInDown 1s ease-out;
 }
 
-/* Navigation styles with hover effects */
+
 nav ul.menu {
   list-style: none;
   display: flex;
@@ -73,7 +72,6 @@ nav ul.menu li a:hover::after {
   width: 100%;
 }
 
-/* Main content styles with animations */
 main {
   flex: 1;
   padding: 30px;
@@ -141,7 +139,6 @@ section h2 {
   color: #666;
 }
 
-/* Form styles with focus effects */
 form {
   display: flex;
   flex-direction: column;
@@ -205,12 +202,12 @@ th, td {
 }
 
 th {
-    background-color: #000; /* Header hitam seperti di gambar */
-    color: #fff; /* Teks putih */
+    background-color: #000; 
+    color: #fff; 
 }
 
 td {
-    background-color: #f9f9f9; /* Sel putih/abu-abu muda */
+    background-color: #f9f9f9; 
 }
 
 input[type="text"],
@@ -226,8 +223,7 @@ button {
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #007bff; /* Biru untuk tombol */
-    color: #fff;
+    background-color: #007bff; 
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -235,10 +231,9 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3; /* Hover lebih gelap */
+    background-color: #0056b3; 
 }
 
-/* Footer styles with gradient */
 footer {
   background: linear-gradient(135deg, #141a07, #00c6ff);
   color: rgb(247, 247, 1);
@@ -249,7 +244,7 @@ footer {
   box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Animations */
+/* Animasi */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -270,9 +265,7 @@ footer {
   }
 }
 
-/* Responsive design */
-
-/* For tablets (601px to 1024px) */
+/* tablet */
 @media (max-width: 1024px) {
   header {
     padding: 15px;
@@ -299,7 +292,7 @@ footer {
   }
 }
 
-/* For mobile phones (max-width: 600px) */
+/* Hp */
 @media (max-width: 600px) {
   header {
     padding: 10px;

@@ -27,6 +27,13 @@
     <h2>Katalog Koleksi</h2>
 
     <div class="katalog">
+
+        <div class="buku">
+            <img src="../images/spiderman.jpg" alt="Buku E-Book">
+            <h3>Peter Parker</h3>
+            <p>Cara Jadi Pahlawan</p>
+        </div>
+
         <div class="buku">
             <img src="../images/pemrograman.jpg" alt="Buku Pemrograman Web">
             <h3>Pemrograman Web</h3>
@@ -81,6 +88,19 @@
             <p>Menjadi Guru Yang Baik</p>
         </div>
 
+        <div class="buku">
+            <img src="../images/kedokteran.jpg" alt="Buku E-Book">
+            <h3>Kedokteran</h3>
+            <p>Organ Bagian Wajah</p>
+        </div>
+        
+
+        <div class="buku">
+            <img src="../images/pancasila.jpg" alt="Buku E-Book">
+            <h3>Hukum Pancasila</h3>
+            <p>Khebinekaan</p>
+        </div>
+ 
     </div>
 </section>
 

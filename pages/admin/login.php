@@ -17,7 +17,6 @@ include '../../config/database.php';
         $input = $_POST['username'];
         $password = $_POST['password'];
 
-        // Cek Input ke database apakah sudah sesuai atau belum dengan data yg ada
         if(filter_var($input, FILTER_VALIDATE_EMAIL)){
             $query = "SELECT * FROM users WHERE email ='$input'";
         } else {
@@ -34,7 +33,7 @@ include '../../config/database.php';
                 $_SESSION['nama_lengkap'] = $row['nama_lengkap'];
                 $_SESSION['username'] = $row['username'];
 
-                // arahkan ke admin
+                // arahke ke admin
                 header("Location: koleksiadmin.php");
                 exit();
             }
@@ -49,25 +48,18 @@ include '../../config/database.php';
     ?>
 
 <header>
-    <h1>Login Perpustakaan</h1>
-    <nav>
-        <ul class="menu">
-            <li><a href="../index.php">Beranda</a></li>
-            <li><a href="../aturan.php">Aturan</a></li>
-            <li><a href="../koleksi.php">Koleksi</a></li>
-        </ul>
-    </nav>
+    <h1>Login Admin Perpustakaan</h1>
 </header>
 
 <main>
     <section>
-        <h2>Silakan Masuk</h2>
+        <h2>Silahkan Masuk Kazeo</h2>
 
             <form method="post" action="">
-        <label>Username atau Email</label>  <br>
+        <label>Username atau Email</label>
         <input type="text" name="username" placeholder="Masukkan Username Email" required> 
 
-        <label>Password</label> <br>
+        <label>Password</label>
         <input type="password" name="password" placeholder="Masukkan Password" required> 
         
 
